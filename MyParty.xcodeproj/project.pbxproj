@@ -22,6 +22,7 @@
 		90966E921F1CE386000C3156 /* Reveal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90966E911F1CE386000C3156 /* Reveal.storyboard */; };
 		90966E971F1CE442000C3156 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90966E961F1CE442000C3156 /* SideMenuViewController.m */; };
 		90966E991F1CE44D000C3156 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90966E981F1CE44D000C3156 /* SideMenu.storyboard */; };
+		90966E9D1F1D04F2000C3156 /* SideBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90966E9C1F1D04F2000C3156 /* SideBarTableViewCell.m */; };
 		A674E3172736BC62BC4AF75F /* Pods_MyParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B210DE9155CB6785638552 /* Pods_MyParty.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		90966E951F1CE442000C3156 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
 		90966E961F1CE442000C3156 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		90966E981F1CE44D000C3156 /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		90966E9B1F1D04F2000C3156 /* SideBarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarTableViewCell.h; sourceTree = "<group>"; };
+		90966E9C1F1D04F2000C3156 /* SideBarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarTableViewCell.m; sourceTree = "<group>"; };
 		EF5D64881FC9F39BE389F2D4 /* Pods-MyParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyParty/Pods-MyParty.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A196E1643E80CFF4F97FA1 /* Pods-MyParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyParty/Pods-MyParty.release.xcconfig"; sourceTree = "<group>"; };
 		F6B210DE9155CB6785638552 /* Pods_MyParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +203,18 @@
 				90966E951F1CE442000C3156 /* SideMenuViewController.h */,
 				90966E961F1CE442000C3156 /* SideMenuViewController.m */,
 				90966E981F1CE44D000C3156 /* SideMenu.storyboard */,
+				90966E9A1F1D04D6000C3156 /* cell */,
 			);
 			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		90966E9A1F1D04D6000C3156 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				90966E9B1F1D04F2000C3156 /* SideBarTableViewCell.h */,
+				90966E9C1F1D04F2000C3156 /* SideBarTableViewCell.m */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		D6FED99EA3558C1CD0015F91 /* Frameworks */ = {
@@ -342,6 +355,7 @@
 				84559D611F1A45F2004879FD /* AppDelegate.m in Sources */,
 				84559D801F1A4942004879FD /* PageContentViewController.m in Sources */,
 				84559D5E1F1A45F2004879FD /* main.m in Sources */,
+				90966E9D1F1D04F2000C3156 /* SideBarTableViewCell.m in Sources */,
 				84559D751F1A4695004879FD /* AppDescriptionViewController.m in Sources */,
 				90966E971F1CE442000C3156 /* SideMenuViewController.m in Sources */,
 				84174D631F1BB519000220B4 /* AuthorizationViewController.m in Sources */,

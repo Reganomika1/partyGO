@@ -7,8 +7,19 @@
 //
 
 #import "SideMenuViewController.h"
+#import "SideBarTableViewCell.h"
 
-@interface SideMenuViewController ()
+@interface SideMenuViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userPhoneNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userSexLabel;
+
+@property (strong, nonatomic) NSArray *names;
+@property (strong, nonatomic) NSArray *identifiers;
+@property (strong, nonatomic) NSArray *images;
 
 @end
 
@@ -16,22 +27,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    self.names = @[@"Профиль", @"Создать тусу", @"Найти тусу", @"Настройки", @"Вход"];
+    self.identifiers = @[@"Profile", @"MakeParty", @"SearchParty", @"Settings", @"Authorization"];
+    
+    self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width/2;
+    self.userImageView.clipsToBounds = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+#pragma mark - UITableViewDatasource -
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.names count];
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    SideBarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self.identifiers objectAtIndex:indexPath.row] forIndexPath:indexPath];
+    cell.cellTextLabel.text = [self.names objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
 
 @end
