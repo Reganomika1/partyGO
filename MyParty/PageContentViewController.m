@@ -8,6 +8,7 @@
 
 #import "PageContentViewController.h"
 #import "AuthorizationViewController.h"
+#import "SWRevealViewController.h"
 
 
 typedef enum {
@@ -84,9 +85,9 @@ typedef enum {
             [[NSNotificationCenter defaultCenter] postNotificationName:@"indexChange" object:@(self.pageIndex)];
     } else {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Reveal" bundle:[NSBundle mainBundle]];
-        AuthorizationViewController *authorizationViewController = [storyboard instantiateViewControllerWithIdentifier:@"RevealViewController"];
-        
-        [self presentViewController:authorizationViewController animated:YES completion:nil];
+        SWRevealViewController *revealViewController = [storyboard instantiateViewControllerWithIdentifier:@"RevealViewController"];
+        revealViewController.rearViewRevealWidth = self.view.frame.size.width - 58;
+        [self presentViewController:revealViewController animated:YES completion:nil];
     }
 }
 

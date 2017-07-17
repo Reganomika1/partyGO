@@ -9,7 +9,7 @@
 #import "MapViewController.h"
 #import "SWRevealViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
-#import <GooglePlaces/GooglePlaces.h>
+  #import <GooglePlaces/GooglePlaces.h>
 
 @interface MapViewController ()
 @property (weak, nonatomic) IBOutlet GMSMapView *mapView;
@@ -22,7 +22,6 @@
     [super viewDidLoad];
     
     self.title = @"Карта";
-
     SWRevealViewController *revealViewController = self.revealViewController;
     if (revealViewController )
     {

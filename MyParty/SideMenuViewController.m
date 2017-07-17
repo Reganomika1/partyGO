@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [[UIView alloc] init];
-    self.names = @[@"Профиль", @"Создать тусу", @"Найти тусу", @"Настройки", @"Вход"];
+    
     self.identifiers = @[@"Profile", @"MakeParty", @"SearchParty", @"Settings", @"Authorization"];
     
     self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width/2;
@@ -46,14 +46,24 @@
 #pragma mark - UITableViewDatasource -
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.names count];
+    return [self.identifiers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SideBarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self.identifiers objectAtIndex:indexPath.row] forIndexPath:indexPath];
-    cell.cellTextLabel.text = [self.names objectAtIndex:indexPath.row];
-    
+    cell.backgroundColor = [UIColor clearColor];
+    cell.selectedCellView.hidden = YES;
     return cell;
+}
+
+
+
+#pragma mark - UITableViewDelegate -
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SideBarTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.selectedCellView.hidden = NO;
+    NSLog(@"%@", [self.names objectAtIndex:indexPath.row]);
 }
 
 

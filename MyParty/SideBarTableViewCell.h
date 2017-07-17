@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
 @property (weak, nonatomic) IBOutlet UILabel *cellTextLabel;
+@property (weak, nonatomic) IBOutlet UIView *selectedCellView;
 
 
 @end
