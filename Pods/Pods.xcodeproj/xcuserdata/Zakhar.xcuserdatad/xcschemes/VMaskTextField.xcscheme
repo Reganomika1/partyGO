@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8C455ACC5CF5ED93CD9A3E8332FA10AC'
+               BlueprintIdentifier = '8B89652497D39C82DCC4C6A65C846BBB'
                BlueprintName = 'VMaskTextField'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'VMaskTextField.framework'>

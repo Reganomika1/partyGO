@@ -9,6 +9,16 @@ target 'MyParty' do
   pod 'AFNetworking'
   pod 'VMaskTextField'
   pod 'IQKeyboardManager'
+  pod 'Firebase/Core'
+  pod 'Firebase/Crash'
+  pod 'GoogleMaps'
+  pod 'VK-ios-sdk'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'Google/SignIn'
+  pod 'GooglePlaces'
+  
 end
 
 

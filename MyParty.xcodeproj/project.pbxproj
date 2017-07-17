@@ -16,6 +16,12 @@
 		84559D7A1F1A47C5004879FD /* AppDescription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84559D791F1A47C5004879FD /* AppDescription.storyboard */; };
 		84559D801F1A4942004879FD /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84559D7F1F1A4942004879FD /* PageContentViewController.m */; };
 		90966E861F1CCB46000C3156 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90966E851F1CCB46000C3156 /* LaunchScreen.xib */; };
+		90966E8A1F1CDBA6000C3156 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90966E891F1CDBA6000C3156 /* SWRevealViewController.m */; };
+		90966E8E1F1CDCE9000C3156 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90966E8D1F1CDCE9000C3156 /* MapViewController.m */; };
+		90966E901F1CDCF6000C3156 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90966E8F1F1CDCF6000C3156 /* Map.storyboard */; };
+		90966E921F1CE386000C3156 /* Reveal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90966E911F1CE386000C3156 /* Reveal.storyboard */; };
+		90966E971F1CE442000C3156 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90966E961F1CE442000C3156 /* SideMenuViewController.m */; };
+		90966E991F1CE44D000C3156 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90966E981F1CE44D000C3156 /* SideMenu.storyboard */; };
 		A674E3172736BC62BC4AF75F /* Pods_MyParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B210DE9155CB6785638552 /* Pods_MyParty.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,6 +41,15 @@
 		84559D7E1F1A4942004879FD /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		84559D7F1F1A4942004879FD /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		90966E851F1CCB46000C3156 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		90966E881F1CDBA6000C3156 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		90966E891F1CDBA6000C3156 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		90966E8C1F1CDCE9000C3156 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		90966E8D1F1CDCE9000C3156 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		90966E8F1F1CDCF6000C3156 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		90966E911F1CE386000C3156 /* Reveal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reveal.storyboard; sourceTree = "<group>"; };
+		90966E951F1CE442000C3156 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		90966E961F1CE442000C3156 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		90966E981F1CE44D000C3156 /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		EF5D64881FC9F39BE389F2D4 /* Pods-MyParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyParty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyParty/Pods-MyParty.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A196E1643E80CFF4F97FA1 /* Pods-MyParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyParty.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyParty/Pods-MyParty.release.xcconfig"; sourceTree = "<group>"; };
 		F6B210DE9155CB6785638552 /* Pods_MyParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +128,9 @@
 		84559D761F1A469C004879FD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				90966E871F1CDBA6000C3156 /* SWRevealViewController */,
+				90966E941F1CE432000C3156 /* SideMenu */,
+				90966E8B1F1CDCD5000C3156 /* Map */,
 				90966E771F1CC2DF000C3156 /* LaunchViewController */,
 				84174D601F1BB4FD000220B4 /* Authorization */,
 				84559D781F1A4724004879FD /* AppDescription */,
@@ -154,6 +172,36 @@
 				90966E851F1CCB46000C3156 /* LaunchScreen.xib */,
 			);
 			name = LaunchViewController;
+			sourceTree = "<group>";
+		};
+		90966E871F1CDBA6000C3156 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90966E881F1CDBA6000C3156 /* SWRevealViewController.h */,
+				90966E891F1CDBA6000C3156 /* SWRevealViewController.m */,
+				90966E911F1CE386000C3156 /* Reveal.storyboard */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		90966E8B1F1CDCD5000C3156 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				90966E8C1F1CDCE9000C3156 /* MapViewController.h */,
+				90966E8D1F1CDCE9000C3156 /* MapViewController.m */,
+				90966E8F1F1CDCF6000C3156 /* Map.storyboard */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		90966E941F1CE432000C3156 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				90966E951F1CE442000C3156 /* SideMenuViewController.h */,
+				90966E961F1CE442000C3156 /* SideMenuViewController.m */,
+				90966E981F1CE44D000C3156 /* SideMenu.storyboard */,
+			);
+			name = SideMenu;
 			sourceTree = "<group>";
 		};
 		D6FED99EA3558C1CD0015F91 /* Frameworks */ = {
@@ -228,8 +276,11 @@
 			files = (
 				90966E861F1CCB46000C3156 /* LaunchScreen.xib in Resources */,
 				84174D651F1BB52B000220B4 /* Authorization.storyboard in Resources */,
+				90966E901F1CDCF6000C3156 /* Map.storyboard in Resources */,
+				90966E921F1CE386000C3156 /* Reveal.storyboard in Resources */,
 				84559D691F1A45F2004879FD /* Assets.xcassets in Resources */,
 				84559D7A1F1A47C5004879FD /* AppDescription.storyboard in Resources */,
+				90966E991F1CE44D000C3156 /* SideMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +343,10 @@
 				84559D801F1A4942004879FD /* PageContentViewController.m in Sources */,
 				84559D5E1F1A45F2004879FD /* main.m in Sources */,
 				84559D751F1A4695004879FD /* AppDescriptionViewController.m in Sources */,
+				90966E971F1CE442000C3156 /* SideMenuViewController.m in Sources */,
 				84174D631F1BB519000220B4 /* AuthorizationViewController.m in Sources */,
+				90966E8A1F1CDBA6000C3156 /* SWRevealViewController.m in Sources */,
+				90966E8E1F1CDCE9000C3156 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

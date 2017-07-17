@@ -82,6 +82,11 @@ typedef enum {
 - (IBAction)skipButtonPressed:(UIButton *)sender {
     if([sender.titleLabel.text isEqualToString:@"Пропустить"]){
             [[NSNotificationCenter defaultCenter] postNotificationName:@"indexChange" object:@(self.pageIndex)];
+    } else {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Reveal" bundle:[NSBundle mainBundle]];
+        AuthorizationViewController *authorizationViewController = [storyboard instantiateViewControllerWithIdentifier:@"RevealViewController"];
+        
+        [self presentViewController:authorizationViewController animated:YES completion:nil];
     }
 }
 
@@ -90,8 +95,7 @@ typedef enum {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Authorization" bundle:[NSBundle mainBundle]];
     AuthorizationViewController *authorizationViewController = [storyboard instantiateViewControllerWithIdentifier:@"authorizationViewController"];
 
-    [self.parentNavigationController pushViewController:authorizationViewController animated:YES];
-    
+    [self presentViewController:authorizationViewController animated:YES completion:nil];
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+@import GoogleMaps;
 
 @interface AppDelegate ()
 
@@ -18,16 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [GMSServices provideAPIKey:@"AIzaSyBppv6RVIyLV8IulQIWNkZvXkFsGK34RiM"];
+    
     UIPageControl *pageControl = [UIPageControl appearance];
     pageControl.pageIndicatorTintColor = [self colorWithHexString:@"E4E3E9"];
     pageControl.currentPageIndicatorTintColor = [self colorWithHexString:@"99D9EA"];
     pageControl.backgroundColor = [UIColor clearColor];
     UINavigationBar *navigationBar = [UINavigationBar appearance];
-    [navigationBar setBackgroundImage:[UIImage new]
-                        forBarMetrics:UIBarMetricsDefault];
     navigationBar.shadowImage = [UIImage new];
     navigationBar.translucent = YES;
-
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"ic_navigationBar"] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"ic_back"]];
@@ -35,6 +36,7 @@
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200, -200) forBarMetrics:UIBarMetricsDefault];
 
     [IQKeyboardManager sharedManager].enable = YES;
+    
     
     return YES;
 }
