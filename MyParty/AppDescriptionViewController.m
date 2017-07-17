@@ -101,7 +101,6 @@
         return nil;
     }
     
-    // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
     pageContentViewController.imageURL = self.pageImages[index];
     pageContentViewController.parentNavigationController = self.navigationController;
