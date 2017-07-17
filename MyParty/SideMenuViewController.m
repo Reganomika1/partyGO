@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSArray *names;
 @property (strong, nonatomic) NSArray *identifiers;
 @property (strong, nonatomic) NSArray *images;
+@property (assign, nonatomic) NSInteger selectedIndex;
 
 @end
 
@@ -35,6 +36,7 @@
     self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width/2;
     self.userImageView.clipsToBounds = YES;
     
+    self.selectedIndex = -1;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,7 +54,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SideBarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self.identifiers objectAtIndex:indexPath.row] forIndexPath:indexPath];
     cell.backgroundColor = [UIColor clearColor];
-    cell.selectedCellView.hidden = YES;
+    if(self.selectedIndex == indexPath.row){
+        cell.selectedCellView.hidden = NO;
+    } else {
+        cell.selectedCellView.hidden = YES;
+    }
     return cell;
 }
 
@@ -61,9 +67,8 @@
 #pragma mark - UITableViewDelegate -
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    SideBarTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.selectedCellView.hidden = NO;
-    NSLog(@"%@", [self.names objectAtIndex:indexPath.row]);
+    self.selectedIndex = indexPath.row;
+    [self.tableView reloadData];
 }
 
 

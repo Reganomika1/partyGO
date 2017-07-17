@@ -57,7 +57,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06W-IK-A28">
-                                <rect key="frame" x="45" y="637" width="85" height="30"/>
+                                <rect key="frame" x="45" y="607" width="85" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Пропустить">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDG-XT-isn">
-                                <rect key="frame" x="247" y="637" width="83" height="30"/>
+                                <rect key="frame" x="247" y="607" width="83" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Регистация">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,10 +81,10 @@
                         <constraints>
                             <constraint firstItem="wBy-Wb-Uc5" firstAttribute="top" secondItem="qJ0-wK-9kg" secondAttribute="bottom" constant="50" id="1Gi-1t-oyg"/>
                             <constraint firstItem="wBy-Wb-Uc5" firstAttribute="centerX" secondItem="JaO-KT-RXP" secondAttribute="centerX" id="2Qn-xf-6xz"/>
+                            <constraint firstItem="HDG-XT-isn" firstAttribute="top" secondItem="wBy-Wb-Uc5" secondAttribute="bottom" constant="10" id="2XF-ZF-Aam"/>
                             <constraint firstItem="06W-IK-A28" firstAttribute="leading" secondItem="JaO-KT-RXP" secondAttribute="leading" constant="45" id="2rI-4n-hAP"/>
                             <constraint firstItem="eGQ-ND-AmH" firstAttribute="top" secondItem="wBy-Wb-Uc5" secondAttribute="bottom" constant="70" id="6Dw-A5-PtD"/>
-                            <constraint firstItem="eGQ-ND-AmH" firstAttribute="top" secondItem="06W-IK-A28" secondAttribute="bottom" id="Alm-HT-Baz"/>
-                            <constraint firstItem="eGQ-ND-AmH" firstAttribute="top" secondItem="HDG-XT-isn" secondAttribute="bottom" id="GOR-co-xBA"/>
+                            <constraint firstItem="06W-IK-A28" firstAttribute="top" secondItem="wBy-Wb-Uc5" secondAttribute="bottom" constant="10" id="LZ3-Bs-q2F"/>
                             <constraint firstAttribute="trailing" secondItem="HDG-XT-isn" secondAttribute="trailing" constant="45" id="ndo-du-TkH"/>
                         </constraints>
                     </view>
